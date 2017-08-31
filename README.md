@@ -1,0 +1,11 @@
+# HierarchicalClassificationThesis
+Techniques for Hierarchical Product Classification
+
+Abstract:
+
+As humans, we go through life categorizing objects: types of activities we can do, dog races, forms of life, departments in a company, sections in a supermarket, and we could keep naming examples for a while. Online shops (e.g. amazon.de), and in particular on- line tools for comparing prices of the online shops (e.g. idealo.de) are not the exception. In this domain (but not exclusively) the categories are presented in a hierarchy, where the upper levels are more general concepts, and the lower levels are more specific. A taxonomy of categories like this can contain thousands of categories, distributed among some levels. Further, the catalog of products that needs to be classified is growing every day. In recent years, multinomial product categorization in e-commerce domains has gained some attention ([SRS12, SRSS11, CJS11]). The need of classifying products au- tomatically has increased, since manual classification costs can be high.
+
+A solution for classifying products accurately into a hierarchical taxonomy is the main purpose of this thesis. In particular, different feature engineering strategies (e.g, word2vec, PCA) were explored. Also a diversity of supervised machine learning algorithms for clas- sification, including SVM, kNN and multinomial logistic regression were investigated. From those the latter outperformed the others, a result that was not seen in any other work.
+
+Different strategies for approaching in general the classification task are possible. We could basically just build a classifier that discriminates between all of the thousands of categories (i.e. a flat approach). However, we could also use the underlying hierarchy in our favor. The latter has been shown to work better in similar environments. In general the second approach was taken. However, a comparison with the flat one is made, in order to confirm the claims of previous works.
+Due to the need for a scalable solution, Apache Spark was employed. Further, this allows our solution to be executed on a cluster, lowering execution times. To the best of our knowledge, this hasn’t been studied before to tackle a similar problem setup.
