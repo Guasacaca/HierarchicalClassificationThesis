@@ -1,5 +1,4 @@
-# HierarchicalClassificationThesis
-Techniques for Hierarchical Product Classification
+# Techniques for Hierarchical Product Classification
 
 Abstract:
 
